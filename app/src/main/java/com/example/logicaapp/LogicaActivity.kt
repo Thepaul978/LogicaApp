@@ -23,16 +23,16 @@ class LogicaActivity : AppCompatActivity() {
 
     private fun checkInput() {
         var count: Int = 0;
-        if (editText.text.toString() == "T") {
+        if (editText.text.toString().toLowerCase() == "t") {
             count++;
         }
-        if (editText2.text.toString() == "F") {
+        if (editText2.text.toString().toLowerCase() == "f") {
             count++;
         }
-        if (editText3.text.toString() == "F") {
+        if (editText3.text.toString().toLowerCase() == "f") {
             count++;
         }
-        if (editText4.text.toString() == "F") {
+        if (editText4.text.toString().toLowerCase() == "f") {
             count++;
         }
         Toast.makeText(this, "The Correct number of answers is: " + count, Toast.LENGTH_SHORT).show()
